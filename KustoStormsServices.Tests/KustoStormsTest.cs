@@ -39,6 +39,7 @@ namespace KustoStormsServices.Tests
         {
 
             var result = _kustoStorms.CountRows();
+            Thread.Sleep(1000000);
             Assert.That(result, Is.EqualTo(3), "There should be 3 rows (ingested and queried)");
         }
 
